@@ -24,7 +24,7 @@ module.exports = function (app) {
         });
       },
 
-      require: '^ngController'
+      require: '^AlbumController'
     };
   });
 };

@@ -1,5 +1,5 @@
 {
-  "name": "ng-adventure",
+  "name": "tad",
   "version": "1.0.0",
   "description": "ng boilerplate",
   "main": "index.js",
@@ -12,7 +12,10 @@
     "gulp": "^3.9.1",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
-    "webpack-stream": "^3.2.0"
+    "webpack-stream": "^3.2.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-growl-reporter": "^1.0.0",
+    "html-loader": "^0.4.3"
   },
   "dependencies": {
     "angular": "^1.5.7"
