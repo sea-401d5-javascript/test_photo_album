@@ -1,0 +1,11 @@
+<div ng-hide="currentImg">
+  <h3>{{photoalbum.description}}</h3>
+  <text-directive ng-hide="mode === 'thumbnail'" ng-repeat="img in photoalbum.imgs" img="img"></text-directive>
+  <thumb-directive ng-hide="mode === 'list'" ng-repeat="img in photoalbum.imgs" img="img" ng-click="showImage(img)"></thumb-directive>
+  <br/>
+  <label>Thumbnail<input type="radio" name="mode" value="thumbnail" ng-model="mode" ng-change="changeView()"/></label>
+  <label>List<input type="radio" name="mode" value="list" ng-model="mode" ng-change="changeView()"/></label>
+  <hr/>
+</div>
+<button ng-show="img == currentImg" ng-click="currentImg = false">X</button>
+<large-directive ng-repeat="img in photoalbum.imgs" img="img" current-img="currentImg"></large-directive>

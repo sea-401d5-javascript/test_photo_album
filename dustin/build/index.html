@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First App</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body data-ng-app="BunnyApp">
+
+      <div ng-controller="AlbumController as albumctrl">
+        <album mode="'thumbnail'" photoalbum="albumctrl.capybara"></album>
+      
+        <album mode="'thumbnail'" photoalbum="albumctrl.nutria"></album>
+
+        <album mode="'thumbnail'" photoalbum="albumctrl.waterbear"></album>
+
+      </div>
+
+    <!-- </main> -->
+    <script src="bundle.js"></script>
+</body>
+
+</html>
